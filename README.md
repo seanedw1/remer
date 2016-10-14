@@ -27,7 +27,7 @@ debug excepts two params one for title and one for status.
 status should be either succes or fail if undefined terminal will output magenta title
 
 ```
-remer.debug('title goes here', 'succes');
+remer.debug('title goes here', 'status');
 ```
 
 terminal output

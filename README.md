@@ -17,6 +17,9 @@ start your api in debug mode.
 ```
 DEBUG=true node src/server
 ```
+### Logging
+
+remer will create and write to a log file on root level of application when enabled.Log will contain robust debugging information about your application.
 
 ### Debugging
 
@@ -29,10 +32,6 @@ status should be either succes or fail if undefined terminal will output magenta
 ```
 remer.debug('title goes here', 'status');
 ```
-
-### Logging
-
-remer will create and write to a log file on root level of application when enabled.Log will contain robust debugging information about your application.
 
 ###Style Guide reference
 [Airbnb](https://github.com/airbnb/javascript)

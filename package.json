@@ -1,6 +1,6 @@
 {
   "name": "remer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "debugging utility tool",
   "main": "src/util",
   "scripts": {
@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/seanedw1/remer#readme",
   "dependencies": {
-    "chai": "^3.5.0",
     "colors": "^1.1.2",
-    "mocha": "^3.1.2"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
     "eslint": "^3.3.1",
     "eslint-config-airbnb": "^10.0.0",
     "eslint-plugin-import": "^1.13.0",

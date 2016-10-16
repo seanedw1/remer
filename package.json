@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/seanedw1/remer#readme",
   "dependencies": {
-    "colors": "^1.1.2",
+    "colors": "^1.1.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

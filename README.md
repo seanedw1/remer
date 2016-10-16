@@ -1,4 +1,6 @@
-# remer
+# Remer
+
+# Getting started
 
 ## Install package
 
@@ -8,14 +10,12 @@ To install package
 npm i remer
 ```
 
-### Getting started
-
 ### Usage
 
 start your api in debug mode.
 
 ```
-DEBUG = true node src/server
+DEBUG=true node src/server
 ```
 
 ### Debugging
@@ -30,11 +30,9 @@ status should be either succes or fail if undefined terminal will output magenta
 remer.debug('title goes here', 'status');
 ```
 
-terminal output
+### Logging
 
-```
-example route hit
-```
+remer will create and write to a log file on root level of application when enabled.Log will contain robust debugging information about your application.
 
 ###Style Guide reference
 [Airbnb](https://github.com/airbnb/javascript)

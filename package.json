@@ -1,6 +1,6 @@
 {
   "name": "remer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "debugging utility tool",
   "main": "src/util",
   "scripts": {

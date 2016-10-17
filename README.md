@@ -1,5 +1,8 @@
 # Remer
 
+[ ![codeship status for seanedw1/remer](https://codeship.com/projects/92c3f5c0-76cf-0134-e5f4-66667cc72310/status?branch=master)](https://app.codeship.com/projects/179698)
+
+
 # Getting started
 
 ## Install package

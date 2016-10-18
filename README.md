@@ -15,6 +15,13 @@ npm i remer
 
 ### Usage
 
+**How to call The Module into a page**
+
+Add this code to top of the page
+```
+const remer = require('remer');
+```
+
 start your api in debug mode.
 
 ```

@@ -17,7 +17,7 @@ npm i remer
 
 **How to call The Module into a page**
 
-Add this code to top of the page
+Add this code to top of the page where you use this utility tool
 ```
 const remer = require('remer');
 ```
@@ -27,6 +27,8 @@ start your api in debug mode.
 ```
 DEBUG=true node src/server
 ```
+Note: This will only work if DEBUG=true
+
 ### Logging
 
 remer will create and write to a log file on root level of application when enabled.Log will contain robust debugging information about your application.
@@ -35,12 +37,27 @@ remer will create and write to a log file on root level of application when enab
 
 write it in this format
 
-debug excepts two params one for title and one for status.
+debug excepts two params one for **title** and one for **status**.
 
-status should be either succes or fail if undefined terminal will output magenta title
+status should be either **success** or **fail** if **undefined** terminal will output magenta title
+
+
+- Parameter to use:
 
 ```
 remer.debug('title goes here', 'status');
+```
+
+- if you want to console.log a success call then:
+
+```
+remer.debug('This router is working, 'success');
+```
+
+- if you want to console.log a error message:
+
+```
+remer.debug('This router is working, 'fail');
 ```
 
 ###Style Guide reference

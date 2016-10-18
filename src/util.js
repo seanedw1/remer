@@ -1,6 +1,9 @@
 // time stamp
 const stamp = new Date();
 
+const test = require('./versionBump/index').test
+test();
+
 const seperator = '======' + stamp + '=======';
 
 const colors = require('colors');

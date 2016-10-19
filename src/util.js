@@ -1,9 +1,6 @@
 // time stamp
 const stamp = new Date();
 
-const test = require('./versionBump/index').test
-test();
-
 const seperator = '======' + stamp + '=======';
 
 const colors = require('colors');
@@ -12,19 +9,20 @@ const colors = require('colors');
 exports.debug = (data, status) => {
   // debug env
   let state;
+  let output;
   if (process.env.DEBUG) {
     if (status === 'fail') {
-      const out1 = seperator + '\n \n' + colors.red(data) + '\n \n';
+      output = seperator + '\n' + colors.red(data) + '\n\n';
       state = status;
-      console.error(out1);
+      console.error(output);
     } else if (status === 'sucess') {
-      const out2 = seperator + '\n \n' + colors.green(data) + '\n \n';
+      output = seperator + '\n' + colors.green(data) + '\n\n';
       state = status;
-      console.log(out2);
+      console.log(output);
       // if status is undefined
     } else {
-      const out3 = seperator + '\n \n' + colors.magenta(data) + '\n \n';
-      console.warn(out3);
+      output = seperator + '\n' + colors.magenta(data) + '\n\n';
+      console.warn(output);
       state = 'warn';
     } // closes else
     console.log('log updated sucessfully');

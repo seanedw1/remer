@@ -13,6 +13,7 @@ const colors = require('colors');
 exports.debug = (data, status) => {
   // debug env - if DEBUG=true then run the app
   if (process.env.DEBUG === 'true') {
+
     // if status is equal to fail
     if (status === 'fail') {
       // seperator date setup text with color red

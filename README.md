@@ -33,6 +33,34 @@ Note: This will only work if DEBUG=true
 
 remer will create and write to a log file on root level of application when enabled.Log will contain robust debugging information about your application.
 
+
+## Version Bumper
+
+Use this code in your page to export the module.
+```
+const updateVersion = require('../src/version_updater/vupdate.js');
+
+```
+
+#### Parameters to use
+
+To upgrade `Major` Version use;
+```
+updateVersion.up('Your Package.json Version','major');
+```
+
+To upgrade `Minor` Version use;
+```
+updateVersion.up('Your Package.json Version','minor');
+```
+To upgrade `Patch` Version use;
+```
+updateVersion.up('Your Package.json Version','patch');
+```
+
+
+
+
 ### Debugging
 
 write it in this format

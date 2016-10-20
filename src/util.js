@@ -51,9 +51,9 @@ exports.versionBump = (version, position = 'patch') => {
     newMinor = oldMinor;
     newPatch = oldPatch + 1;
   } else {
-    const newMajor = oldMajor;
-    const newMinor = oldMinor;
-    const newPatch = oldPatch;
+    newMajor = oldMajor;
+    newMinor = oldMinor;
+    newPatch = oldPatch;
     process.stdout.write('Either you have a type-o or you for got to add what position to bump up.\npositions options ["major", "minor", "patch"]');
   }
 

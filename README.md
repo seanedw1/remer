@@ -9,7 +9,7 @@
 
 To install package
 
-```
+```bash
 npm i remer
 ```
 
@@ -17,7 +17,7 @@ npm i remer
 
 start your api in debug mode.
 
-```
+```javascript
 DEBUG=true node src/server
 ```
 ### Logging
@@ -32,7 +32,7 @@ debug excepts two params one for title and one for status.
 
 status should be either success or fail if undefined terminal will output magenta title
 
-```
+```javascript
 remer.debug('title goes here', 'status');
 ```
 

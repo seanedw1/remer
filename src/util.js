@@ -33,9 +33,9 @@ exports.debug = (data, status) => {
 exports.versionBump = (version, position = 'patch') => {
   const currentVersion = version.split('.');
 
-  const oldMajor = parseInt(currentVersion[0]);
-  const oldMinor = parseInt(currentVersion[1]);
-  const oldPatch = parseInt(currentVersion[2]);
+  const oldMajor = parseInt(currentVersion[0], 10);
+  const oldMinor = parseInt(currentVersion[1], 10);
+  const oldPatch = parseInt(currentVersion[2], 10);
 
   let newMajor = 0;
   let newMinor = 0;
@@ -59,4 +59,4 @@ exports.versionBump = (version, position = 'patch') => {
 
   process.stdout.write(newMajor + '.' + newMinor + '.' + newPatch);
   return newMajor + '.' + newMinor + '.' + newPatch;
-}
+};

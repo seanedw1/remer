@@ -41,11 +41,6 @@ remer.debug('title goes here', 'status');
 `warn`: Denotes that the log is for a potential errors in the future
 `fail`: Denotes that this log is reporting an error
 
-###Style Guide reference
-[Airbnb](https://github.com/airbnb/javascript)
-
-###Contributors
-[View Contributors](https://github.com/seanedw1/remer/graphs/contributors)
 
 ### Version Bumper
 This package has a version bumper feature. You can require it to be used to bump the current version stated in the package.json file.
@@ -56,8 +51,6 @@ Ther first parameter should be the version you want bumped up. The intent for th
 const version = require('./package.json');
 
 ```
-</br>
-
 This function bumps up the version based semantic versioning: **MAJOR.MINOR.PATCH** </br>
 This function takes 1 of 3 values as the second argument:
 `major`: bumps current version up 1 **major** version
@@ -67,18 +60,23 @@ This function takes 1 of 3 values as the second argument:
 Examples:
 ```javascript
 // create an instance of the version bumper
-const versionBumper = require('utilitytoolwash').versionBump;
-const version = require('path/to/package.json');
+const versionBump = require('remer').versionBump;
+const version = require('./package.json').version;
 
 // package.json current version is 1.0.0
 
 // bump up 1 major version
-versionBumper(version, 'major'); // returns 2.0.0
+versionBump(version, 'major'); // returns 2.0.0
 
 // bump up 1 major version
-versionBumper(version, 'minor'); // returns 1.1.0
+versionBump(version, 'minor'); // returns 1.1.0
 
 // bump up 1 major version
-versionBumper(version, 'patch'); // returns 1.0.1
-
+versionBump(version, 'patch'); // returns 1.0.1
 ```
+
+###Style Guide reference
+[Airbnb](https://github.com/airbnb/javascript)
+
+###Contributors
+[View Contributors](https://github.com/seanedw1/remer/graphs/contributors)
